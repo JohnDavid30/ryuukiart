@@ -1,3 +1,3 @@
-const { plengcard } = require("./structures/ryuukiart");
+const { ryuukiart } = require("./structures/ryuukiart");
 
 module.exports = { ryuukiart };
