@@ -142,7 +142,7 @@ class ryuukiart {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/980689967791628348/1181263330183221379/bannermusicc.png`);
+            const background = await canvas.loadImage(`https://media.discordapp.net/attachments/1055711106468937778/1181431346292342815/bannermusicc.png?ex=65e68c2e&is=65d4172e&hm=4cc5c072870e690cecf398d97e299e4c4014b35f9b404b9c92c09dbed7dd129b`);
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
