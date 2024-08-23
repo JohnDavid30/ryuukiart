@@ -1,5 +1,6 @@
 const canvas = require("@napi-rs/canvas");
 const { colorFetch } = require("../functions/colorFetch");
+const { join } = require('path');
 
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/circularstd-black.otf`, "circular-std");
 canvas.GlobalFonts.registerFromPath(`node_modules/plengcard/build/structures/font/notosans-jp-black.ttf`, "noto-sans-jp");
@@ -142,7 +143,7 @@ class ryuukiart {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(`https://cdn.discordapp.com/attachments/1055711106468937778/1214204380929331260/DISCORD_MUSIC_2.png?ex=65f842f3&is=65e5cdf3&hm=08f5894a4c9eaecde7782a4b6fe22b44a87629b4bfd6a6fde7fb49854148580f&`);
+            const background = await canvas.loadImage(join('build/structures/image/DISCORD_MUSIC_2.png');
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
