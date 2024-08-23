@@ -143,7 +143,7 @@ class ryuukiart {
             circleCtx.fillStyle = `#${validatedColor}`;
             circleCtx.fill();
 
-            const background = await canvas.loadImage(join('build/structures/image/DISCORD_MUSIC_2.png'));
+            const background = await canvas.loadImage(join('build/structures/image/music.png'));
 
             const thumbnailCanvas = canvas.createCanvas(564, 564);
             const thumbnailCtx = thumbnailCanvas.getContext('2d');
